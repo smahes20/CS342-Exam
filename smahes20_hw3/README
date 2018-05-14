@@ -1,0 +1,75 @@
+Name: Sakshi Maheshwari
+NetID:Smahes20
+CS Account: smaheshw
+
+Homework 2 CS 342
+project part 2: Development of Question, answer and exam classes. these classes
+    also use multiple inherited classes to run the program.
+
+*************************************************************************
+Description: 
+
+The main feature to be added in the next release is the ability to save and restore Exams and Exam
+components, as a precursor to creating functional programs for the creation, taking, and grading of
+Exams. Only one new class will be added, but a few new methods and fields will be added to existing
+classes, and some are also removed. The new class will be a ScannerFactory, which will allocate a
+singleton Scanner for reading from the keyboard, and will provide access to the one and only keyboard
+Scanner as needed. Note that the exam answers will be kept in a separate file from the questions, so
+that each student can have their own answer file.
+
+**************************************************************************
+Files included with this Project: 
+
+Answer.java
+Question.java
+Exam.java
+ExamTester.java
+MCAnswer.java
+MCSAAnswer.java
+SAAnswer.java
+MCQuestion.java
+MCSAQuestion.java
+SAQuestion.java
+ScannerFactory.java
+Exam.txt
+makefile
+README
+
+**************************************************************************
+How to run the program:
+
+The program can be run by using the makefile which uses ExamTester.java
+and its dependencies Answer.java, Question.java Exam.java classes.these classes also have 
+multiple dependencies that are called using inheritance. it also creates 
+various other java object classes namely: Answer.class, Question.class, Exam.class
+and ExamTester.class .
+Given below is the general command to run the program:
+        
+                "make exam"
+    (this command compiles all the .java files in the the folder namely Answer.java, 
+    Question.java, Exam.java, ExamTester.java)
+
+                "java ExamTester"
+    (this command runs the program i.e. displays the questions and their answer,
+    points earned in each question and total points earned in the exam.)
+
+**************************************************************************
+Other details about the program:
+
+The Exam contains 3 questions that are worth 1 point each. If the user get a question wrong 0 
+points are awarded,and there is no negative marking for the question. So if the user gets one of 
+the questions wrong, the user will get 2.0/3.0 points. All the methods in the
+classes are public except the constructor in the answer class and all the variable declarations are 
+kept protected so that the children classes can access these variables. 
+There are a few libraries that are used in the program like the Random library 
+which is used to randomise the questions and their answers.The arraylist library 
+is also used to use Lists like answers in MCQuestion.java and questions in 
+Exam.java. The Answer.java, Question.java, MCQuestion.java, MCAnswer.java are 
+abstract classes and just have methods declared in it that is the inisialization is done
+in their children classes that are inheriting these classes.
+
+Technical issues:
+for get value in MCMA question, for some reason the credit if selected is not being read
+and maybe is initialized to 0. which as a result does not sum up the value obtained by
+the question properly.
+

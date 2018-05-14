@@ -1,0 +1,31 @@
+GK 101 Exam
+
+MCSAQuestion
+1.0
+What is the other name of the Willis tower?
+5
+0.0 Burj Khalifa
+0.0 Burj Dubai
+0.0 Trump Tower
+0.0 Hancockn Center
+1.0 Sears Tower
+
+SAQuestion
+1.0
+Which Continent does India lie in?
+asia
+
+MCMAQuestion
+1.0
+which of the following countries lie in North America?
+0.0
+5
+0.5 USA
+0.5 Canada
+0.0 China
+0.0 Australia
+0.0 Italy
+
+
+
+
